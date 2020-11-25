@@ -43,17 +43,16 @@ Pass a data frame to this function to make a codebook for that dataset.
 If the dataset has metadata (attributes) set on its variables, these will be
 used to make the codebook more informative. Examples are item, value, and
 missing labels.
-Data frames imported via \code{\link[haven:read_dta]{haven::read_dta()}}, \code{\link[haven:read_sav]{haven::read_sav()}}, or from
+Data frames imported via \code{\link[haven:read_dta]{haven::read_dta()}}, \code{\link[haven:read_spss]{haven::read_sav()}}, or from
 \href{https://formr.org}{formr.org} will have these attributes in the right format.
 By calling this function inside a knitr code chunk, the
 codebook will become part of the document you are generating.
 }
 \examples{
 # will generate figures in a temporary directory
-old_base_dir <- knitr::opts_knit$get("base.dir")
-knitr::opts_knit$set(base.dir = tempdir())
-on.exit(knitr::opts_knit$set(base.dir = old_base_dir))
+\dontrun{
 data("bfi")
 bfi <- bfi[, c("BFIK_open_1", "BFIK_open_1")]
 md <- codebook(bfi, survey_repetition = "single", metadata_table = FALSE)
+}
 }

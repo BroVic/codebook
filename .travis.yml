@@ -7,6 +7,7 @@ warnings_are_errors: false
 
 r_packages:
   - covr
+  - mnormt
 
 r_github_packages:
   - jimhester/covr
@@ -17,67 +18,6 @@ matrix:
       dist: xenial
       sudo: required
 
-      r_binary_packages:
-        - stringi
-        - magrittr
-        - curl
-        - jsonlite
-        - Rcpp
-        - bindrcpp
-        - RcppEigen
-        - rpf
-        - openssl
-        - rlang
-        - igraph
-        - utf8
-        - gss
-        - haven
-        - XML
-        - data.table
-        - matrixStats
-        - carData
-        - rgl
-        - dplyr
-        - purrr
-        - tidyr
-        - readr
-        - minqa
-        - mvtnorm
-        - nloptr
-        - SparseM
-        - lme4
-        - httpuv
-        - markdown
-        - OpenMx
-        - sem
-        - readxl
-        - openxlsx
-        - pander
-        - minpack.lm
-        - StanHeaders
-        - quantreg
-        - forcats
-        - ggplot2
-        - psych
-        - tidyselect
-        - pander
-        - DT
-        - jsonlite
-        - future
-        - htmltools
-        - labeling
-        - labelled
-        - rstudioapi
-        - shiny
-        - miniUI
-        - glue
-        - lubridate
-        - rio
-        - testthat
-        - lme4
-        - roxygen2
-        - renv
-        - webshot
 
 #    - os: osx
 #      osx_image: xcode9.2
